@@ -1,0 +1,94 @@
+:root {
+  --color: #050;
+  --text-color: #ffffff;
+  --accent-color: #D4AF37;
+  --border-color: #D4AF37;
+  --low-priority-color: #8bc34a;
+  --medium-priority-color: #ffc107;
+  --high-priority-color: #ff9800;
+  --background-color: #2f2f2f;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-group {
+  margin: px;
+}
+
+.task-group-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task {
+  background-color: #2f2f2f;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: 10px;
+  cursor: move;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-priority {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.low-priority {
+  color: var(--low-priority-color);
+}
+
+.medium-priority {
+  color: var(--medium-priority-color);
+}
+
+.high-priority {
+  color: var(--high-priority-color);
+}
+
+.task-done {
+  text-decoration: line-through;
+}
+
+.add-task-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #c9a236;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width:100%;
+}
+
+.search:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
